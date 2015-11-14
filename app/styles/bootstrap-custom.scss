@@ -1,0 +1,19 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// // Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/grid";
+
+// // Components
+@import "bootstrap/card";
+
+// Utility classes
+@import "bootstrap/utilities";
