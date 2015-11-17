@@ -1,20 +1,5 @@
-@import "bootstrap-custom";
-@import "colors";
+@import "bootstrap/bootstrap-reboot";
 
-header {
-    background-color: $colorLightBlue500;
-    margin-bottom: 10px;
-
-    h1 {
-        color: white;
-    }
-
-    h3 {
-        color: rgba(white, .7);
-    }
-}
-
-.card-header {
-    background-color: $colorLightBlue200;
-    // color: white;
-}
+@import "lib/global";
+@import "lib/header";
+@import "lib/section";

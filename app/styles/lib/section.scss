@@ -1,0 +1,60 @@
+@import "colors";
+
+.section {
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+    text-align: center;
+    top: 10px;
+    width: 90%;
+
+    &--boxed {
+        border: solid $colorBlue 1px;
+        padding-bottom: 35px;
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    &__link {
+        color: $colorBlue;
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+
+    &__mail {
+        color: inherit;
+        display: inline-block;
+    }
+
+    &__title {
+        background-color: white;
+        bottom: 16px;
+        color: $colorBlue;
+        display: inline-block;
+        font-family: 'Bitter', serif;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 5px;
+        position: relative;
+    }
+
+    &--titled {
+        border-top: solid $colorBlue 1px;
+    }
+
+    &__text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+}

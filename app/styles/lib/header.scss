@@ -1,0 +1,21 @@
+@import "colors";
+
+.header {
+    background-color: $colorBlue;
+    margin-bottom: 25px;
+    padding: 28px 0;
+    text-align: center;
+
+    &__title {
+        color: white;
+        font-size: 46px;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        color: $colorLightBlue;
+        font-size: 34px;
+        font-weight: 300;
+    }
+}

@@ -9,132 +9,130 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header class="container">
-      <h1 class="text-center">Ludovic Viaud</h1>
-      <h3 class="text-center">Full Stack Ninja</h3>
+    <header class="header">
+      <h1 class="header__title">Ludovic Viaud</h1>
+      <h3 class="header__subtitle">Full Stack Ninja</h3>
     </header>
 
-    <main class="container">
-      <div class="card">
-        <div class="card-header">
-          Summary
-        </div>
-        <div class="card-block">
-          <p>
-            I am a web developer with a strong background in programming in C, C++,
-            Python, PHP, and Javascript. I am also comfortable with HTML and CSS.
-          </p>
-        </div>
-      </div>
+    <main class="main">
+      <article class="section">
+        <img class="section__image" src="images/ludovic-viaud-265.jpg">
+        <p class="section__text">
+          I am a web developer with a strong background in programming in C, C++,
+          Python, PHP, and Javascript. I am also an expert in HTML and CSS and I focus in cross-device user experience.
+        </p>
+      </article>
 
-      <h1>Education</h1>
-      <h2>Udacity</h2>
-      <p>2015</p>
-      <p>Nanodegree Front End Development</p>
+      <article class="section section--titled">
+        <h1 class="section__title">EDUCATION</h1>
+        <p class="section__text">Udacity, 2015:<br>
+        <strong>Nanodegree Front End Development</strong></p>
 
-      <h2>Université Vincennes-Saint-Denis (Paris VIII)</h2>
-      <p>2010 - 2013</p>
-      <p>Informatics</p>
+        <p class="section__text">Université Vincennes-Saint-Denis (Paris&nbsp;VIII), 2010&nbsp;-&nbsp;2013:<br>
+        <strong>Informatics</strong></p>
 
-      <h2>Université Louis Pasteur (Strasbourg I)</h2>
-      <p>2004 - 2007</p>
-      <p>Economy, Biology, Chemistry, Physics, Mathematics</p>
+        <p class="section__text">Université Louis Pasteur (Strasbourg&nbsp;I), 2004&nbsp;-&nbsp;2007:<br>
+        <strong>Pharmacy and Economy</strong></p>
+      </article>
 
-      <h1>Skills</h1>
-      <ul class="list-unstyled">
-        <li><span>HTML</span>
-          <ul>
-            <li>Flux RSS</li>
-            <li>SEO</li>
-          </ul>
-        </li>
-        <li><span>CSS</span>
-          <ul>
-            <li>Sass</li>
-            <li>Bootstrap</li>
-          </ul>
-        </li>
-        <li><span>Javascript</span>
-          <ul>
-            <li>Node</li>
-            <li>npm</li>
-            <li>Bower</li>
-            <li>Yeoman</li>
-            <li>Gulp</li>
-            <li>jQuery</li>
-            <li>Jade</li>
-            <li>Chai</li>
-            <li>Mocha</li>
-            <li>and more ...</li>
-          </ul>
-        </li>
-        <li><span>Python</span>
-          <ul>
-            <li>pip</li>
-            <li>Pew</li>
-            <li>Pytest</li>
-            <li>Django</li>
-            <li>Request</li>
-            <li>and more ...</li>
-          </ul>
-        </li>
-        <li><span>PHP</span>
-          <ul>
-            <li>Composer</li>
-            <li>PHPUnit</li>
-            <li>Laravel</li>
-            <li>Symfony</li>
-            <li>WordPress</li>
-            <li>and more ...</li>
-          </ul>
-        </li>
-        <li>Linux</li>
-        <li>Vim</li>
-        <li>Git and GitHub</li>
-        <li>Apache</li>
-      </ul>
+      <article class="section section--titled">
+        <h1 class="section__title"><span>SKILLS</span></h1>
+        <p class="section__text"><strong>HTML:</strong> Flux RSS, SEO</p>
+        <p class="section__text"><strong>CSS:</strong> Sass, Bootstrap</p>
+        <p class="section__text"><strong>Javascript:</strong> Node, npm, Bower, Yeoman, Gulp, jQuery, Jade, Chai, Mocha</p>
+        <p class="section__text"><strong>Python:</strong> pip, Pew, Pytest, Django, Request</p>
+        <p class="section__text"><strong>PHP:</strong> Composer, PHPUnit, Laravel, Symfony, WordPress</p>
+        <p class="section__text"><strong>Misc:</strong> Linux, Vim, Git and GitHub, Apache</p>
+      </article>
 
-      <h1>Languages</h1>
-      <ul>
-        <li>French</li>
-        <li>English</li>
-      </ul>
+      <article class="section section--titled">
+        <h1 class="section__title"><span>LANGUAGES</span></h1>
+        <p class="section__text"><strong>French:</strong> Native</p>
+        <p class="section__text"><strong>English:</strong> Advanced</p>
+        <p class="section__text"><strong>Spanish:</strong> Beginner</p>
+      </article>
 
-      <h1>Projects</h1>
-      <h2>Viajando Por Ahi</h2>
-      <a href="http://viajandoporahi.com">http://viajandoporahi.com</a>
-      <img src="images/viajandoporahi.png" class="img-responsive">
-      <p>
-        A well known blog of an argentinian travel writer.
-      </p>
+      <article class="section section--titled">
+        <h1 class="section__title"><span>PROJECTS</span></h1>
 
-      <h2>Escribir Me</h2>
-      <a href="http://escribir.me">http://escribir.me</a>
-      <img src="images/escribirme.png" class="img-responsive">
-      <p>
-        A blog about writing and creativity.
-      </p>
+        <img src="images/viajandoporahi-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Viajando Por Ahi</strong><br>
+          One of the most read travel blogs of Argentina.<br>
+          <a class="section__link" href="http://viajandoporahi.com">
+            viajandoporahi.com
+          </a>
+        </p>
 
-      <h2>Erotica</h2>
-      <a href="http://erotica-strasbourg.fr">http://erotica-strasbourg.fr</a>
-      <img src="images/erotica.jpg" class="img-responsive">
-      <p>
-        A website for a local shop based in Strasbourg, France.
-      </p>
+        <img src="images/escribirme-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Escribir Me</strong><br>
+          Blog about writing and creativity.<br>
+          <a class="section__link" href="http://escribir.me">
+            escribir.me
+          </a>
+        </p>
 
-      <h2>Aniko Villalba</h2>
-      <a href="http://anikovillalba.com">http://anikovillalba.com</a>
-      <img src="images/anikovillalba.jpg" class="img-responsive">
-      <p>
-        Portfolio and E-shop.
-      </p>
+        <img src="images/anikovillalba-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Aniko Villalba</strong><br>
+          Portfolio and e-shop of an Argentinian writer and photographer.<br>
+          <a class="section__link" href="http://anikovillalba.com">
+            anikovillalba.com
+          </a>
+        </p>
 
-      <h2>Pour La Science and Cerveau &amp; Psycho</h2>
-      <p>Unfortunatly these websites were online only few months for a Google AdWords campaign.</p>
-      <img src="images/pourlascience.png" class="img-responsive">
-      <p>
-        Custom made one-page checkout e-commerce websites for two well known french magazines.
-      </p>
+        <img src="images/tiendadelpatronato-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Tienda del Patronato</strong><br>
+          E-shop for an Argentinian educational institution that sells Christmas cards and calendars in benefit of the children.<br>
+          <a class="section__link" href="http://tiendadelpatronato.org.ar/">
+            tiendadelpatronato.org.ar
+          </a>
+        </p>
+
+        <img src="images/erotica-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Erotica Strasbourg</strong><br>
+          Website for a local shop based in Strasbourg, France.<br>
+          <a class="section__link" href="http://erotica-strasbourg.fr">erotica-strasbourg.fr</a>
+        </p>
+
+        <img src="images/pourlascience-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Pour La Science</strong><br>
+          Custom made one-page checkout e-commerce websites for a well known French magazines.<br>
+          <span class="section__link">This site was online for a few months as part of a Google Ad-words campaign.</span>
+        </p>
+
+        <img src="images/cerveauandpsycho-311.png" class="section__image">
+        <p class="section__text">
+          <strong>Cerveau &amp; Psycho</strong><br>
+          Custom made one-page checkout e-commerce websites for a well known French magazines.<br>
+          <span class="section__link">This site was online for a few months as part of a Google Ad-words campaign.</span>
+        </p>
+      </article>
     </main>
+
+    <footer  class="section section--boxed">
+      <h1 class="section__title">CONTACT ME</h1>
+      <a class="section__mail" href="mailto:ludovio@gmail.com">
+            ludovio@gmail.com
+          </a>
+    </footer>
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Source+Sans+Pro:400,300:latin', 'Bitter::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
   </body>
 </html>

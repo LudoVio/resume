@@ -86,7 +86,7 @@ gulp.task('styles', function () {
     'app/styles/main.scss'
   ])
     .pipe($.sourcemaps.init())
-    .pipe($.changed('.tmp/styles', {extension: '.css'}))
+    // .pipe($.changed('.tmp/styles', {extension: '.css'}))
     .pipe($.sass({
       precision: 10,
       onError: console.error.bind(console, 'Sass error:')
@@ -113,13 +113,7 @@ gulp.task('html', function () {
     //       the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/index.html',
-        'app/styleguide.html'
-      ],
-      // CSS Selectors for UnCSS to ignore
-      ignore: [
-        /.navdrawer-container.open/,
-        /.app-bar.open/
+        'app/index.html'
       ]
     })))
     // Concatenate and minify styles
@@ -127,8 +121,6 @@ gulp.task('html', function () {
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
-    // Update production Style Guide paths
-    .pipe($.replace('components/components.css', 'components/main.min.css'))
     // Minify any HTML
     .pipe($.if('*.html', $.minifyHtml()))
     // Output files
