@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ludovic Viaud Resume</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="scripts/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="header">
@@ -16,11 +21,16 @@
 
     <main class="main">
       <article class="section">
-        <img class="section__image" src="images/ludovic-viaud-265.jpg">
+        <img class="section__image" src="images/ludovic-viaud.jpg">
         <p class="section__text">
           I am a web developer with a strong background in programming in C, C++,
           Python, PHP, and Javascript. I am also an expert in HTML and CSS and I focus in cross-device user experience.
         </p>
+        <p class="section__text">
+          <strong>Contact me:</strong>
+          <a class="section__mail" href="mailto:ludovio@gmail.com">
+            ludovio@gmail.com
+          </a>
       </article>
 
       <article class="section section--titled">
@@ -55,7 +65,7 @@
       <article class="section section--titled">
         <h1 class="section__title"><span>PROJECTS</span></h1>
 
-        <img src="images/viajandoporahi-311.png" class="section__image">
+        <img src="images/viajandoporahi.png" class="section__image">
         <p class="section__text">
           <strong>Viajando Por Ahi</strong><br>
           One of the most read travel blogs of Argentina.<br>
@@ -64,7 +74,7 @@
           </a>
         </p>
 
-        <img src="images/escribirme-311.png" class="section__image">
+        <img src="images/escribirme.png" class="section__image">
         <p class="section__text">
           <strong>Escribir Me</strong><br>
           Blog about writing and creativity.<br>
@@ -73,7 +83,7 @@
           </a>
         </p>
 
-        <img src="images/anikovillalba-311.png" class="section__image">
+        <img src="images/anikovillalba.png" class="section__image">
         <p class="section__text">
           <strong>Aniko Villalba</strong><br>
           Portfolio and e-shop of an Argentinian writer and photographer.<br>
@@ -82,7 +92,7 @@
           </a>
         </p>
 
-        <img src="images/tiendadelpatronato-311.png" class="section__image">
+        <img src="images/tiendadelpatronato.png" class="section__image">
         <p class="section__text">
           <strong>Tienda del Patronato</strong><br>
           E-shop for an Argentinian educational institution that sells Christmas cards and calendars in benefit of the children.<br>
@@ -91,35 +101,28 @@
           </a>
         </p>
 
-        <img src="images/erotica-311.png" class="section__image">
+        <img src="images/erotica.png" class="section__image">
         <p class="section__text">
           <strong>Erotica Strasbourg</strong><br>
           Website for a local shop based in Strasbourg, France.<br>
           <a class="section__link" href="http://erotica-strasbourg.fr">erotica-strasbourg.fr</a>
         </p>
 
-        <img src="images/pourlascience-311.png" class="section__image">
+        <img src="images/pourlascience.png" class="section__image">
         <p class="section__text">
           <strong>Pour La Science</strong><br>
           Custom made one-page checkout e-commerce websites for a well known French magazines.<br>
           <span class="section__link">This site was online for a few months as part of a Google Ad-words campaign.</span>
         </p>
 
-        <img src="images/cerveauandpsycho-311.png" class="section__image">
+        <img src="images/cerveauandpsycho.png" class="section__image">
         <p class="section__text">
           <strong>Cerveau &amp; Psycho</strong><br>
           Custom made one-page checkout e-commerce websites for a well known French magazines.<br>
-          <span class="section__link">This site was online for a few months as part of a Google Ad-words campaign.</span>
+          <span class="section__link section__link--last">This site was online for a few months as part of a Google Ad-words campaign.</span>
         </p>
       </article>
     </main>
-
-    <footer  class="section section--boxed">
-      <h1 class="section__title">CONTACT ME</h1>
-      <a class="section__mail" href="mailto:ludovio@gmail.com">
-            ludovio@gmail.com
-          </a>
-    </footer>
 
     <script type="text/javascript">
       WebFontConfig = {

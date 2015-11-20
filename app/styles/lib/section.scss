@@ -1,7 +1,7 @@
 @import "colors";
 
 .section {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 5px;
@@ -12,6 +12,10 @@
     &--boxed {
         border: solid $colorBlue 1px;
         padding-bottom: 35px;
+    }
+
+    &--titled {
+        border-top: solid $colorBlue 1px;
     }
 
     &__image {
@@ -26,11 +30,14 @@
         color: $colorBlue;
         display: inline-block;
         margin-bottom: 35px;
+
+        &--last {
+            margin-bottom: 0;
+        }
     }
 
     &__mail {
-        color: inherit;
-        display: inline-block;
+        color: $colorGray;
     }
 
     &__title {
@@ -48,13 +55,16 @@
         position: relative;
     }
 
-    &--titled {
-        border-top: solid $colorBlue 1px;
-    }
-
     &__text {
         margin-left: auto;
         margin-right: auto;
         text-align: left;
     }
+}
+
+@include media-breakpoint-up(md) {
+  .section {
+    width: 50%;
+    float: left;
+  }
 }
