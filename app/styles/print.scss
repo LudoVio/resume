@@ -12,3 +12,19 @@ $grid-breakpoints: (
 ) !default;
 
 @import "main";
+
+.section.projects > .row > div {
+    page-break-inside: avoid;
+    top: 200px;
+}
+
+.section.projects {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.project-1,
+.project-2 {
+    top: 200px;
+}
